@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "6a18f653",
         "name": "com.DefaultCompany.QSTPmobile",
-        "processId": 17638,
+        "processId": 15885,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -60,6 +60,24 @@
             "deviceId": "6a18f653",
             "name": "com.DefaultCompany.QSTPmobile",
             "processId": 17638,
+            "exited": false
+        },
+        {
+            "deviceId": "6a18f653",
+            "name": "com.DefaultCompany.QSTPmobile",
+            "processId": 27742,
+            "exited": false
+        },
+        {
+            "deviceId": "6a18f653",
+            "name": "com.DefaultCompany.QSTPmobile",
+            "processId": 21086,
+            "exited": false
+        },
+        {
+            "deviceId": "6a18f653",
+            "name": "com.DefaultCompany.QSTPmobile",
+            "processId": 15885,
             "exited": false
         }
     ],

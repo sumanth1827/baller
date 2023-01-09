@@ -5,12 +5,12 @@ using UnityEngine;
 public class contro : MonoBehaviour
 {
     public float rotateSpeed = 10f;
-    bool updown;
+    
     private Gyroscope gyro;
     // Start is called before the first frame update
     void Start()
     {
-        Input.gyro.enabled = true;
+       // Input.gyro.enabled = true;
     }
 
     // Update is called once per frame
@@ -32,14 +32,14 @@ public class contro : MonoBehaviour
                 {
                     //transform.Rotate(0, 0, rotateSpeed * Time.deltaTime);
                     transform.Rotate(Vector3.forward, -(rotateSpeed * Time.deltaTime));
-                    updown = true;
+                    
                    // transform.rotation =  Quaternion.Slerp(transform.rotation, Quaternion.Euler(transform.rotation.x,transform.rotation.y,transform.rotat),3f);
                 }
                 else
                 {
                     //transform.Rotate(0, 0, -(rotateSpeed * Time.deltaTime));
                     transform.Rotate(Vector3.forward, (rotateSpeed * Time.deltaTime));
-                    updown = false;
+                    
                 }
             }
             if (touch.phase == TouchPhase.Stationary)
@@ -48,13 +48,13 @@ public class contro : MonoBehaviour
                 {
                     //transform.Rotate(0, 0, rotateSpeed * Time.deltaTime);
                     transform.Rotate(Vector3.forward, -(rotateSpeed * Time.deltaTime));
-                    updown = true;
+                    
                 }
                 else
                 {
                     //transform.Rotate(0, 0, -(rotateSpeed * Time.deltaTime));
                     transform.Rotate(Vector3.forward, (rotateSpeed * Time.deltaTime));
-                    updown = false;
+                    
                 }
             }
             if (touch.phase == TouchPhase.Moved)
@@ -63,32 +63,16 @@ public class contro : MonoBehaviour
                 {
                     //transform.Rotate(0, 0, rotateSpeed * Time.deltaTime);
                     transform.Rotate(Vector3.forward, -(rotateSpeed * Time.deltaTime));
-                    updown = true;
+                    
                 }
                 else
                 {
                     //transform.Rotate(0, 0, -(rotateSpeed * Time.deltaTime));
                     transform.Rotate(Vector3.forward, (rotateSpeed * Time.deltaTime));
-                    updown = false;
+                    
                 }
             }
-            if (touch.phase == TouchPhase.Ended)
-            {
-                float timer = 100;
-                if(timer>0)
-                {
-                    timer -= Time.deltaTime;
-                }
-                
-                if (updown)
-                {
-                    transform.Rotate(Vector3.forward, -(rotateSpeed * Time.deltaTime));
-                }
-                else
-                {
-                    transform.Rotate(Vector3.forward, (rotateSpeed * Time.deltaTime));
-                }
-            }
+           
         }
     }
 }
