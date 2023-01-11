@@ -6,8 +6,11 @@ using UnityEngine.SceneManagement;
 public class boundary : MonoBehaviour
 {
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider ci)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (ci.tag == "Player")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 }
