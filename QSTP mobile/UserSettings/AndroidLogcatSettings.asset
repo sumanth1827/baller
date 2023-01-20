@@ -11,18 +11,6 @@
         {
             "deviceId": "6a18f653",
             "name": "com.DefaultCompany.QSTPmobile",
-            "processId": 21086,
-            "exited": true
-        },
-        {
-            "deviceId": "6a18f653",
-            "name": "com.DefaultCompany.QSTPmobile",
-            "processId": 15885,
-            "exited": true
-        },
-        {
-            "deviceId": "6a18f653",
-            "name": "com.DefaultCompany.QSTPmobile",
             "processId": 16034,
             "exited": true
         },
@@ -42,6 +30,18 @@
             "deviceId": "6a18f653",
             "name": "com.DefaultCompany.QSTPmobile",
             "processId": 9370,
+            "exited": true
+        },
+        {
+            "deviceId": "6a18f653",
+            "name": "com.DefaultCompany.QSTPmobile",
+            "processId": 17234,
+            "exited": true
+        },
+        {
+            "deviceId": "6a18f653",
+            "name": "com.DefaultCompany.QSTPmobile",
+            "processId": 27701,
             "exited": false
         }
     ],
