@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "6a18f653",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "6a18f653",
+        "name": "com.DefaultCompany.Baller",
+        "processId": 27064,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -42,6 +42,36 @@
             "deviceId": "6a18f653",
             "name": "com.DefaultCompany.QSTPmobile",
             "processId": 27701,
+            "exited": false
+        },
+        {
+            "deviceId": "6a18f653",
+            "name": "com.DefaultCompany.QSTPmobile",
+            "processId": 21324,
+            "exited": false
+        },
+        {
+            "deviceId": "6a18f653",
+            "name": "com.DefaultCompany.Baller",
+            "processId": 3317,
+            "exited": false
+        },
+        {
+            "deviceId": "6a18f653",
+            "name": "com.DefaultCompany.Baller",
+            "processId": 7686,
+            "exited": false
+        },
+        {
+            "deviceId": "6a18f653",
+            "name": "com.DefaultCompany.Baller",
+            "processId": 21162,
+            "exited": false
+        },
+        {
+            "deviceId": "6a18f653",
+            "name": "com.DefaultCompany.Baller",
+            "processId": 27064,
             "exited": false
         }
     ],

@@ -10,13 +10,14 @@ public class next : MonoBehaviour
     public bool ab = false;
     private Vector3 startpos,endpos,a;
     public GameObject portal;
-   
 
+   
     void Update()
     {
 
 
         startpos = Camera.main.transform.position;
+
 
         if (ab)
         {
@@ -68,7 +69,7 @@ public class next : MonoBehaviour
     }
     private void tester()
     {
-        
+        Debug.Log("activated");
         a = startpos;
         endpos.y = startpos.y - 19f;
         endpos.x = startpos.x;
