@@ -1,77 +1,47 @@
 {
     "m_SelectedDeviceId": "6a18f653",
     "m_SelectedPackage": {
-        "deviceId": "6a18f653",
-        "name": "com.DefaultCompany.Baller",
-        "processId": 27064,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "6a18f653",
-            "name": "com.DefaultCompany.QSTPmobile",
-            "processId": 16034,
-            "exited": true
-        },
-        {
-            "deviceId": "6a18f653",
-            "name": "com.DefaultCompany.QSTPmobile",
-            "processId": 19498,
-            "exited": true
-        },
-        {
-            "deviceId": "6a18f653",
-            "name": "com.DefaultCompany.QSTPmobile",
-            "processId": 7721,
-            "exited": true
-        },
-        {
-            "deviceId": "6a18f653",
-            "name": "com.DefaultCompany.QSTPmobile",
-            "processId": 9370,
-            "exited": true
-        },
-        {
-            "deviceId": "6a18f653",
-            "name": "com.DefaultCompany.QSTPmobile",
-            "processId": 17234,
-            "exited": true
-        },
-        {
-            "deviceId": "6a18f653",
-            "name": "com.DefaultCompany.QSTPmobile",
-            "processId": 27701,
-            "exited": false
-        },
-        {
-            "deviceId": "6a18f653",
-            "name": "com.DefaultCompany.QSTPmobile",
-            "processId": 21324,
-            "exited": false
-        },
-        {
-            "deviceId": "6a18f653",
             "name": "com.DefaultCompany.Baller",
             "processId": 3317,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "6a18f653",
             "name": "com.DefaultCompany.Baller",
             "processId": 7686,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "6a18f653",
             "name": "com.DefaultCompany.Baller",
             "processId": 21162,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "6a18f653",
             "name": "com.DefaultCompany.Baller",
             "processId": 27064,
+            "exited": true
+        },
+        {
+            "deviceId": "6a18f653",
+            "name": "com.DefaultCompany.Baller",
+            "processId": 25881,
+            "exited": true
+        },
+        {
+            "deviceId": "6a18f653",
+            "name": "com.instagram.android",
+            "processId": 25174,
             "exited": false
         }
     ],

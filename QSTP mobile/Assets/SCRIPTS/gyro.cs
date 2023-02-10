@@ -11,12 +11,12 @@ public class gyro : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Input.gyro.enabled = false;
-        startpos = transform.rotation;
+        //Input.gyro.enabled = false;
+        //startpos = transform.rotation;
     }
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         if (gyro_on)
         {
@@ -29,5 +29,5 @@ public class gyro : MonoBehaviour
             Input.gyro.enabled = false;
         }
        
-    }
+    }*/
 }
