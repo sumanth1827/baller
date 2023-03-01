@@ -6,6 +6,7 @@ TagManager:
   tags:
   - button
   - button2
+  - block
   layers:
   - Default
   - TransparentFX

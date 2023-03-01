@@ -2,49 +2,48 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using TMPro;
 public class press : MonoBehaviour
 {
     public float abc = 0f;
     public Vector3 touchpos1;
-  
+    Coroutine  cr2;
+    [SerializeField] TMP_Text times;
 
- 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider ci)
     {
-        if (other.tag == "Player")
+        if (ci.tag == "Player")
         {
-            if (Input.touchCount > 0)
-            {
-
-                Touch touch = Input.GetTouch(0);
-
-                Vector3 touchPosition = Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, touch.position.y, abc));
-                Vector3 actualtouchpos = new Vector3(touchPosition.x, touchPosition.y, abc);
-
-                touchpos1 = actualtouchpos;
-                if (touch.phase == TouchPhase.Began)
-                {
-
-
-                    Collider[] touchcollider = Physics.OverlapSphere(actualtouchpos, 0.4f);
-                    for (int i = 0; i < touchcollider.Length; i++)
-                    {
-                        if (touchcollider[i].tag == "Player")
-                        {
-
-                            
-                            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
-                        }
-                      
-                      
-
-                    }
-
-                }
-               
-            }
+           
+            cr2 = StartCoroutine(starter());
         }
+    }
+
+    private void OnTriggerExit(Collider ci)
+    {
+        if (ci.tag == "Player")
+        {
+           
+            StopCoroutine(cr2);
+            times.enabled = false;
+        }
+    }
+
+
+    IEnumerator starter()
+    {
+        times.enabled = true;
+        times.text = 3.ToString();
+        yield return new WaitForSeconds(1);
+        times.text = 2.ToString();
+        yield return new WaitForSeconds(1);
+        times.text = 1.ToString();
+        yield return new WaitForSeconds(1);
+        times.text = 0.ToString();
+        yield return null;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+
+
     }
 }

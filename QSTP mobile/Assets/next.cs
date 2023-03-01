@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using TMPro;
 public class next : MonoBehaviour
 {
     public float abc = 0f;
@@ -12,6 +12,8 @@ public class next : MonoBehaviour
     [SerializeField] private Vector3 endpos,a;
     public GameObject portal;
 
+    Coroutine cr,cr2;
+    [SerializeField] TMP_Text times;
     private void Start()
     {
         a = Camera.main.transform.position;
@@ -33,10 +35,61 @@ public class next : MonoBehaviour
        
        
     }
+    private void OnTriggerEnter(Collider ci)
+    {
+        if (ci.tag == "Player")
+        {
+            cr = StartCoroutine(timer(ci.gameObject));
+            cr2 = StartCoroutine(starter());
+        }
+    }
+
+    private void OnTriggerExit(Collider ci)
+    {
+        if(ci.tag == "Player")
+        {
+            StopCoroutine(cr);
+            StopCoroutine(cr2);
+            times.enabled = false;
+        }
+    }
+    IEnumerator timer(GameObject ci)
+    {
+        yield return new WaitForSeconds(3f);
+        a = Camera.main.transform.position;
+        endpos.y = a.y - 19f;
+        endpos.x = a.x;
+        endpos.z = a.z;
+        ab = true;
+        yield return null; 
+        ci.transform.position = portal.transform.position;
+    }
+
+    IEnumerator starter()
+    {
+        times.enabled = true;
+        times.text = 3.ToString();
+        yield return new WaitForSeconds(1);
+        times.text = 2.ToString();
+        yield return new WaitForSeconds(1);
+        times.text = 1.ToString();
+        yield return new WaitForSeconds(1);
+        times.text = 0.ToString();
+
+
+
+    }
+
+
+
+
+
+    /*
     private void OnTriggerStay(Collider ci)
     {
         if (ci.tag == "Player")
         {
+           
             if (Input.touchCount > 0)
             {
 
@@ -73,16 +126,5 @@ public class next : MonoBehaviour
 
             }
         }
-    }
-    private void tester()
-    {
-        Debug.Log("activated");
-        a = Camera.main.transform.position;
-        endpos.y = a.y - 19f;
-        endpos.x = a.x;
-        endpos.z = a.z;
-        ab = true;
-        
-
-    }
+    }*/
 }

@@ -16,7 +16,7 @@ public class jumper : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<Rigidbody>().AddForce(direction, ForceMode.Impulse);
+            collision.gameObject.GetComponent<Rigidbody>().AddForce(direction, ForceMode.VelocityChange);
 
         }
     }

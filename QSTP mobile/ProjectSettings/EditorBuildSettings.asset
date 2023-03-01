@@ -5,19 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/level 2.unity
     guid: 8396c2cd31c982b43ae7ee9e9daf5695
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/trap level 1.unity
     guid: 5d78b561fa77e424c842e6597eb3ee4f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/level 3 - in progress.unity
     guid: 473b710040102dd4781b595c634d21d7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/trap level 3 - in progress.unity
     guid: 29c66c5b5ead11f4e8d13ba9943ec4b4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/trap level 2.unity
     guid: 308656388060c0445a87b4bc4d820fa7
   - enabled: 0
@@ -32,6 +32,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/level 6.unity
     guid: 448b9e57a2ecf3a4fa7e498eefcd258b
+  - enabled: 1
+    path: Assets/Scenes/QUARK/lvl1.unity
+    guid: 835bcf2d477c004459449f6acf74212c
+  - enabled: 1
+    path: Assets/Scenes/QUARK/lvl2.unity
+    guid: a5347eb992c403a43ab8ac40778a31b4
+  - enabled: 1
+    path: Assets/Scenes/QUARK/lvl3.unity
+    guid: c8874e6993effb848a0bd18b98963d94
+  - enabled: 1
+    path: Assets/Scenes/QUARK/lvl4.unity
+    guid: 99ac24b14fe2ff449b8346796c461c3f
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 76dbfc882c8e6524f964a8be0218dd69,
       type: 2}

@@ -7,7 +7,7 @@ public class contro : MonoBehaviour
     public float rotateSpeed = 10f;
     void Start()
     {
-      
+        Application.targetFrameRate = 300;
     }
 
     private void Update()

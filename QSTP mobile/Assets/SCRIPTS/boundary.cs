@@ -5,12 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class boundary : MonoBehaviour
 {
-
+    [SerializeField] Transform portal;
     private void OnTriggerEnter(Collider ci)
     {
         if (ci.tag == "Player")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            ci.transform.position = portal.position;
+            
         }
     }
+
 }
