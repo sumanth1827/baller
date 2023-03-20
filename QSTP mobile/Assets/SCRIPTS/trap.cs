@@ -7,11 +7,11 @@ public class trap : MonoBehaviour
 {
     [SerializeField] Transform portal;
     [SerializeField] GameObject anim;
-    
+    score sc;
     // Start is called before the first frame update
     void Start()
     {
-
+        sc = GameObject.FindWithTag("score").GetComponent<score>();
     }
 
     // Update is called once per frame
@@ -25,8 +25,9 @@ public class trap : MonoBehaviour
         {
 
             StartCoroutine(delay(ci.gameObject));
-            
-            
+            sc.deaths++;
+            sc.scores -= 20f;
+
         }
     }
     IEnumerator delay(GameObject ci)

@@ -12,16 +12,23 @@ public class next : MonoBehaviour
     [SerializeField] private Vector3 endpos,a;
     public GameObject portal;
 
+   
     Coroutine cr,cr2;
     [SerializeField] TMP_Text times;
+
+
+ 
     private void Start()
     {
+        
         a = Camera.main.transform.position;
+        
     }
     void Update()
     {
+       
         
-
+       
 
 
         if (ab)
@@ -39,6 +46,10 @@ public class next : MonoBehaviour
     {
         if (ci.tag == "Player")
         {
+
+
+            
+            
             cr = StartCoroutine(timer(ci.gameObject));
             cr2 = StartCoroutine(starter());
         }
@@ -48,32 +59,46 @@ public class next : MonoBehaviour
     {
         if(ci.tag == "Player")
         {
+
+            
+            
             StopCoroutine(cr);
+           
             StopCoroutine(cr2);
             times.enabled = false;
         }
     }
+
     IEnumerator timer(GameObject ci)
     {
-        yield return new WaitForSeconds(3f);
+        //anims.SetBool("anim", true);
+        yield return new WaitForSeconds(1.5f);
+
+        portal.transform.parent.rotation = Quaternion.Euler(0, 0, 0);
+        yield return null;
+        ci.transform.position = portal.transform.position;
+        
+        
         a = Camera.main.transform.position;
         endpos.y = a.y - 19f;
         endpos.x = a.x;
         endpos.z = a.z;
         ab = true;
-        yield return null; 
-        ci.transform.position = portal.transform.position;
+
+        
+        
+
     }
 
     IEnumerator starter()
     {
         times.enabled = true;
         times.text = 3.ToString();
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         times.text = 2.ToString();
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         times.text = 1.ToString();
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         times.text = 0.ToString();
 
 

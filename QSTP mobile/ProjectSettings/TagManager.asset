@@ -7,6 +7,7 @@ TagManager:
   - button
   - button2
   - block
+  - score
   layers:
   - Default
   - TransparentFX

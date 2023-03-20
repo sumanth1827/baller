@@ -5,6 +5,7 @@ using UnityEngine;
 public class contro : MonoBehaviour
 {
     public float rotateSpeed = 10f;
+
     void Start()
     {
         Application.targetFrameRate = 300;
@@ -23,6 +24,8 @@ public class contro : MonoBehaviour
 
             if (touch.phase == TouchPhase.Began)
             {
+
+
                 if (touch.position.x > ((Screen.width) / 2))
                 {
                     

@@ -34,11 +34,11 @@ public class press : MonoBehaviour
     {
         times.enabled = true;
         times.text = 3.ToString();
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         times.text = 2.ToString();
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         times.text = 1.ToString();
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         times.text = 0.ToString();
         yield return null;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
