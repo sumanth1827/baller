@@ -17,7 +17,7 @@ public class boundary : MonoBehaviour
         {
             ci.transform.position = portal.position;
             sc.deaths++;
-            sc.scores -= 20f;
+            sc.currscore -= 1;
         }
     }
 

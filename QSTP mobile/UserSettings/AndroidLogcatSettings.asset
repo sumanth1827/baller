@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "6a18f653",
         "name": "com.DefaultCompany.Baller",
-        "processId": 11235,
+        "processId": 18493,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -132,6 +132,12 @@
             "deviceId": "6a18f653",
             "name": "com.DefaultCompany.Baller",
             "processId": 11235,
+            "exited": false
+        },
+        {
+            "deviceId": "6a18f653",
+            "name": "com.DefaultCompany.Baller",
+            "processId": 18493,
             "exited": false
         }
     ],

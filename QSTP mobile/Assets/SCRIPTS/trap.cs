@@ -26,7 +26,7 @@ public class trap : MonoBehaviour
 
             StartCoroutine(delay(ci.gameObject));
             sc.deaths++;
-            sc.scores -= 20f;
+            sc.currscore -= 2;
 
         }
     }
